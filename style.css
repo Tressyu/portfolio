@@ -145,7 +145,7 @@ a.ex4:hover, a.ex4:active {font-family: monospace;}
   --color-highlight: #fdcf4c;
   --color-primary: #b64e08;
   --color-primary-active: #79320e;
-  --color-text-default: #262626;
+  --color-text-default: teal;
   --color-text-muted: #4f4f4f;
 
   --font-family-body: "Figtree", system-ui, sans-serif;
@@ -244,7 +244,7 @@ fieldset {
 }
 
 .fs-label {
-  color: teal;
+  color: var(--color-text-default);
   display: block;
   font-family: var(--font-family-display);
   font-size: 1rem;
