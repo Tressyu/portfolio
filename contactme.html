@@ -38,20 +38,29 @@
       <h1 class="w3-jumbo">Contact me</h1>
       <img src="images/tressoc.png" alt="Avatar" class="avatar">
       <p class="w3-large">
-        <form action="https://fabform.io/f/k6kOuNA" method="post">
-            <!-- Replace "YOUR_FORM_ENDPOINT" with your actual FabForm form endpoint -->
-    
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br>
-    
-            <input type="submit" value="Submit">
-        </form>
+
+     <form action="https://formspree.io/f/{FORM_ID}" class="fs-form" target="_top" method="POST">
+      <div class="fs-field">
+        <label class="fs-label" for="name">Your Name</label>
+        <input class="fs-input" id="name" name="name" required />
+     </div>
+      <div class="fs-field">
+        <label class="fs-label" for="email">Email</label>
+        <input class="fs-input" id="email" name="email" required />
+        <p class="fs-description">
+          This will help me respond to your query via an email.
+        </p>
+      </div>
+      <div class="fs-field">
+         <label class="fs-label" for="message">Message</label>
+        <textarea class="fs-textarea" id="message" name="message" required></textarea>
+         <p class="fs-description">What would you like to discuss?</p>
+      </div>
+       <div class="fs-button-group">
+        <button class="fs-button" type="submit">Submit</button>
+      </div>
+     </form>
+       
     </div>
     </div>
 
