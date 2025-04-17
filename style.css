@@ -140,17 +140,18 @@ a.ex4:hover, a.ex4:active {font-family: monospace;}
 :root {
   --color-background: #e7e7e7;
   --color-background-alt: #888888;
-  --color-border-active: #da7105;
+  --color-border-active: teal;
   --color-border-default: #d1d1d1;
   --color-highlight: #fdcf4c;
-  --color-primary: #b64e08;
-  --color-primary-active: #79320e;
+  --color-primary: teal;
+  --color-primary-active: rgb(1, 73, 73);
   --color-text-default: teal;
-  --color-text-muted: teal;
+  --color-text-muted: rgb(1, 73, 73);
 
   --font-family-body: "Figtree", system-ui, sans-serif;
   --font-family-display: "Poppins", system-ui, sans-serif;
 }
+
 
 /** Base **/
 
