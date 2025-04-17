@@ -146,7 +146,7 @@ a.ex4:hover, a.ex4:active {font-family: monospace;}
   --color-primary: #b64e08;
   --color-primary-active: #79320e;
   --color-text-default: teal;
-  --color-text-muted: #4f4f4f;
+  --color-text-muted: teal;
 
   --font-family-body: "Figtree", system-ui, sans-serif;
   --font-family-display: "Poppins", system-ui, sans-serif;
