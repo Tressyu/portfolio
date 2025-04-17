@@ -244,7 +244,7 @@ fieldset {
 }
 
 .fs-label {
-  color: var(--color-text-default);
+  color: teal;
   display: block;
   font-family: var(--font-family-display);
   font-size: 1rem;
