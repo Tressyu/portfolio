@@ -251,13 +251,6 @@ fieldset {
   line-height: 1.25rem;
 }
 
-.fs-description {
-  color: var(--color-text-muted);
-  display: block;
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
-
 .fs-button-group {
   display: flex;
   flex-direction: row-reverse;
