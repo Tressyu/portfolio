@@ -484,3 +484,7 @@ fieldset {
 .fs-textarea::placeholder {
   color: var(--color-text-muted);
 }
+
+/* Gallery settings */
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
