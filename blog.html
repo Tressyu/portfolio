@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>The Tree Garden</title>
+<title>The Tree Garden | About me</title>
 <link rel="icon" type="image/x-icon" href="images/tressyufavicon.ico">
     <meta charset="UTF-8">
     <meta name="description" content="The Tree Garden">
@@ -12,61 +12,59 @@
     <link rel="stylesheet" href="w3school.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }      
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
       }
     }
-  }
-  </script>
+    </script>
 <body>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <!-- The Sidebar-->
   <div class="sidebar">
-    <a href="https://tressyu.github.io/portfolio">Home</a>
-    <a href="https://tressyu.github.io/portfolio/blog.html">Blog</a>
+    <a href="https://tressyu.github.io/portfolio/index.html">Home</a>
+    <a class="active" href="https://tressyu.github.io/portfolio/blog.html">Blog</a>
     <a href="https://tressyu.github.io/portfolio/aboutme.html">About</a>
-    <a class="active" href="https://tressyu.github.io/portfolio/gallery.html">Gallery</a>
+    <a href="#gallery">Gallery</a>
     <a href="https://tressyu.github.io/portfolio/contactme.html">Contact</a>
    </div>
 
    <!-- The Header -->
    <div class="header" id="myHeader">
-    <h2 class="w3-jumbo">Tressyu Gallery</h2>
+    <h2>Tressyu Portfolio/Blog</h2>
    </div>
 
+   <!-- Page Content-->
+   <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
 
-<!-- Page Content-->
-<div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
-
-    <div w3-include-html="gallerycontent.html"></div> 
+    <div w3-include-html="post/2025-04-18.html"></div> 
 
     <script>
       includeHTML();
@@ -101,14 +99,7 @@
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
-
-    // Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 </script>
 </body>
 </html>
+
