@@ -70,9 +70,13 @@ div.w3-panel {
   .header {
     margin-left: 0;
   }
-  .header h1,h2 {
+  .header h1{
     margin-left: 0;
     font-size: 30;
+  }
+  h2 {
+    margin-left: 0;
+    font-size: 20;
   }
 }
 
@@ -100,7 +104,7 @@ p {
 
 .header {
   top: 0;
-  margin-left: 200px;
+  margin-left: 0;
   padding: 10px 16px;
   color: #f1f1f1;
 }
