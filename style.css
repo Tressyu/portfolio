@@ -96,6 +96,9 @@ body,h1,h2,h3,h4,h5,h6 {
 body {
   background-color: #141414;
 }
+h2 {
+  margin-left: 200px;
+}
 
 p {
   color: white;
@@ -104,7 +107,7 @@ p {
 
 .header {
   top: 0;
-  margin-left: 400px;
+  margin-left: 200px;
   padding: 10px 16px;
   color: #f1f1f1;
 }
