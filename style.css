@@ -23,8 +23,8 @@
 .sidebar {
  margin: 0;
  padding: 0;
- width: 160px;
- background-color:  #111;
+ width: 200px;
+ background-color:#111;
  position: fixed;
  height: 100%;
  overflow: auto;
@@ -50,11 +50,11 @@
   color: white;
 }
 
-div.content {
-  margin-left: 160px;
+div.w3-panel {
+  margin-left: 200px;
   padding: 1px 16px;
-  height: 550px;
-  width: 1000px;
+  height: auto;
+  width: 1000px;  
 }
 
 @media screen and (max-width: 700px) {
@@ -65,6 +65,15 @@ div.content {
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
+  div.w3-panel {
+    margin-left: 0;
+  }
+  .header {
+    margin-left: 0;
+  }
+  .header h1 {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -75,6 +84,7 @@ div.content {
 }
 
 body,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
   font-family: monospace;
   color: teal;
 }
@@ -94,28 +104,6 @@ p {
   padding: 10px 16px;
   color: #f1f1f1;
 }
-
-/* Make sure that padding behaves as expected */
-* {box-sizing: border-box;}
-
-/* Container for skills bars */
-.container {
-width: 50%; 
-}
-
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
-
-.html {width: 100%; background-color: teal;}
-.css {width: 100%; background-color: teal;}
-.javascript {width: 9%; background-color: teal;}
-.bootstrap {width: 85%; background-color: teal;}
-.english {width: 75%; background-color: teal;}
-.dutch {width: 100%; background-color: teal;}
 
 .w3-theme {color: #fff !important;background-color:teal !important}
 .w3-btn {background-color:teal;margin-bottom:4px}
@@ -151,7 +139,6 @@ a.ex4:hover, a.ex4:active {font-family: monospace;}
   --font-family-body: "Figtree", system-ui, sans-serif;
   --font-family-display: "Poppins", system-ui, sans-serif;
 }
-
 
 /** Base **/
 
