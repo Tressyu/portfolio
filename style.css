@@ -50,11 +50,6 @@
   color: white;
 }
 
-div.w3-panel {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: auto; 
-}
 
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -64,14 +59,11 @@ div.w3-panel {
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
-  div.w3-panel {
-    margin-left: 0;
-  }
-  h2 {
-    margin-left: 0;
-    font-size: 20;
-  }
+
   .header {
+    margin-left: 0;
+  }
+  .header h1 {
     margin-left: 0;
   }
 }
@@ -91,10 +83,6 @@ body,h1,h2,h3,h4,h5,h6 {
 
 body {
   background-color: #141414;
-}
-
-h2 {
-  margin-left: 200px;
 }
 
 p {
