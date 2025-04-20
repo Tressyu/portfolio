@@ -63,7 +63,10 @@
   .header {
     margin-left: 0;
   }
-  .header h1 {
+  h1 {
+    margin-left: 0;
+  }
+  h2 {
     margin-left: 0;
   }
 }
@@ -72,6 +75,15 @@
   .sidebar a {
     text-align: center;
     float: none;
+  }
+  .header {
+    margin-left: 0;
+  }
+  h1 {
+    margin-left: 0;
+  }
+  h2 {
+    margin-left: 0;
   }
 }
 
