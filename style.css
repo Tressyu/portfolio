@@ -59,11 +59,6 @@
 
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
-
-  .header {margin-left: 0;}
-  h1 {margin-left: 0;}
-  h2 {margin-left: 0;
-  }
   }
 
 @media screen and (max-width: 400px) {
@@ -71,10 +66,6 @@
     text-align: center;
     float: none;
   } 
-
-  .header {margin-left: 0;
-    text-align: center;
-  }
  }
 
 body,h1,h2,h3,h4,h5,h6 {
@@ -97,6 +88,7 @@ p {
   margin-left: 200px;
   padding: 10px 16px;
   color: #f1f1f1;
+  align-items: center;
 }
 
 .w3-theme {color: #fff !important;background-color:teal !important}
