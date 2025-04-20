@@ -42,6 +42,14 @@
       Will try to update and work on the site freqently.</p>
   </div>
 
+<!--slide show-->
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images/accelerator.png" style="width:100%">
+  <img class="mySlides" src="images/danger.png" style="width:100%">
+  <img class="mySlides" src="images/gaskmaskguy.png" style="width:100%">
+  <img class="mySlides" src="images/darkwarrior.png" style="width:100%">
+</div>
+
   <div class="w3-container w3-panel w3-padding-large w3-card-4 w3-Asphalt">
     <h1>About me</h1>
     <p id="demo"></p>
@@ -127,6 +135,21 @@ w3CodeColor();
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
 </script>
 
 <script>
