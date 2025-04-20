@@ -67,6 +67,9 @@
     text-align: center;
     float: none;
   } 
+
+   .header {float: none;}
+   h2 {float: none;}
  }
 
 body,h1,h2,h3,h4,h5,h6 {
