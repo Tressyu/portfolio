@@ -68,8 +68,10 @@
     float: none;
   } 
 
-   .header {float: none;}
-   h2 {float: none;}
+   .header {margin-left: 0%;
+    float: none;}
+   h2 {float: none;
+  margin-left: 0px;}
  }
 
 body,h1,h2,h3,h4,h5,h6 {
