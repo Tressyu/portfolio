@@ -1,186 +1,98 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-<title>The Tree Garden</title>
-<link rel="icon" type="image/x-icon" href="images/tressyufavicon.ico">
-    <meta charset="UTF-8">
-    <meta name="description" content="The Tree Garden">
-    <meta name="keywords" content="HTLM, CSS, JavaScript, W3.CSS">
-    <meta name="author" content="Tressyu">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+  <title>The Tree Garden</title>
+  <link rel="icon" type="image/x-icon" href="images/tressyufavicon.ico">
+  <meta charset="UTF-8">
+  <meta name="description" content="The Tree Garden">
+  <meta name="keywords" content="HTLM, CSS, JavaScript, W3.CSS">
+  <meta name="author" content="Tressyu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 </head>
+<script src="/javascript/script.js"></script>
+
 <body>
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <!-- The Sidebar-->
-  <div class="sidebar">
-    <a class="active" href="https://tressyu.github.io/portfolio">Home</a>
-    <a href="https://tressyu.github.io/portfolio/blog.html">Blog</a>
-    <a href="https://tressyu.github.io/portfolio/aboutme.html">About</a>
-    <a href="https://tressyu.github.io/portfolio/gallery.html">Gallery</a>
-   </div>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="https://tressyu.github.io">Blog</a>
+    <a href="https://tressyu.github.io/about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-   <div class="w3-main w3-container" style="margin-left:200px">
-    <header class="w3-Asphalt">
-     <div class="w3-container">
-     <h1 class="w3-xxxlarge">Tressyu Blog</h1>
-     </div>
-   </header>
-   </div>
-
-<!-- Page Content-->
-<div class="w3-main w3-container" style="margin-left:200px;margin-top:110px;">
-  <div class="w3-container w3-panel w3-teal w3-leftbar w3-border-teal">
+  <!-- Important Info/News-->
+  <div class="w3-panel w3-blue">
+    <h3>Information!</h3>
     <p>This personal portfolio is still heavy under construction.<br>
       Will try to update and work on the site freqently.</p>
+    </p>
   </div>
 
-<!--slide show-->
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="images/accelerator.png" style="width:100%">
-  <img class="mySlides" src="images/danger.png" style="width:100%">
-  <img class="mySlides" src="images/priest.png" style="width:100%">
-  <img class="mySlides" src="images/darkwarrior.png" style="width:100%">
-</div>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
 
-
-  <div class="w3-container w3-panel w3-padding-large w3-card-4 w3-Asphalt">
-    <h1>About me</h1>
-    <p id="demo"></p>
-    <img src="images/tressoc.png" alt="Avatar" class="avatar">
-    <p class="w3-xlarge">Hey! I’m Tressyu -</p>
-    <p class="w3-large">
-    <p>a self-driven learner with a passion for technology, creativity, and continuous growth.<br> 
-      I spend a lot of my time learning to code, whether that’s through building small projects, exploring new languages, or just figuring out how things work behind the scenes.<br> 
-      When I’m not coding, you’ll probably find me gaming, watching YouTube, or diving into random topics that catch my interest. <br> 
-      I’m naturally curious and always looking for new skills to pick up or ideas to explore.<br> 
-      This site is where I share my journey — from coding projects to thoughts, experiments, and things I find cool along the way. <br> 
-      <br> 
-      Thanks for stopping by!<br></p>
-  </div>
-
-  <div class="w3-container w3-panel w3-padding-large w3-card-4 w3-Asphalt">
-    <h1 class="w3-jumbo">HTML</h1>
-    <p class="w3-xlarge">The language for building web pages</p>
-    <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/html/default.asp" target="_blank">LEARN HTML</a>
-    <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/tags/default.asp" target="_blank">HTML REFERENCE</a>
-    <p class="w3-large">
-      <div class="w3-code htmlHigh notranslate w3-flat-asbestos">
-        &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
-        &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
-        &lt;body&gt;<br><br>
-        &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
-        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-        &lt;/body&gt;<br>
-        &lt;/html&gt;
-      </div>
-    <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default" target="_blank">Try it Yourself</a>
-  </div>
-
-  <div class="w3-container w3-panel w3-padding-large w3-card-4 w3-Asphalt">
-    <h1 class="w3-jumbo">CSS</h1>
-    <p class="w3-xlarge">The Language for Styling Web Pages</p>
-    <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/css/default.asp" target="_blank">LEARN CSS</a>
-    <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/cssref/index.php" target="_blank">CSS REFERENCE</a>
-    <p class="w3-large">
-    <p><div class="w3-code cssHigh notranslate w3-flat-asbestos">
-    body {<br>
-        background-color: #d0e4fe;<br>}<br>h1 {<br>
-        color: orange;<br>
-        text-align: center;<br>}<br>p {<br>
-        font-family: "Times New Roman";<br>
-        font-size: 20px;<br>}
+    <!-- Full-width images with number and caption text-->
+    <div class="mySlides fade">
+      <img src="/images/artificial_flower.png" style="width:100%;">
+      <div class="text">An Artificail flower</div>
     </div>
-    <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default" target="_blank">Try it Yourself</a>
-  </div>
-  
-  <div class="w3-container w3-panel w3-padding-large w3-card-4 w3-Asphalt">
-    <h1 class="w3-jumbo">JS</h1>
-    <p class="w3-xlarge">The Language for Programming Web Pages</p>
-    <a href="https://www.w3schools.com/js/default.asp" class="w3-button w3-theme w3-hover-white" target="_blank">LEARN JS</a>
-    <a href="https://www.w3schools.com/jsref/default.asp" class="w3-button w3-theme w3-hover-white" target="_blank">JS REFERENCE</a>
-  
-    <p><div class="w3-code jsHigh notranslate w3-flat-asbestos">
-     // Click the button to change the color of this paragraph<br><br>function myFunction() {<br>
-        var x;<br>
-        x = document.getElementById("demo");<br>
-        x.style.fontSize = "25px"; <br>
-        x.style.color = "red"; <br>}
+
+    <div class="mySlides fade">
+      <img src="/images/glowingeyeanimeedit.png" style="width:100%;">
+      <div class="text">Glowing eye Anime Edit</div>
     </div>
-    <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_default" target="_blank">Try it Yourself</a>
+
+    <div class="mySlides fade">
+      <img src="/images/priest.png" style="width:100%;">
+      <div class="text">An priest edit</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/images/rose.png" style="width:100%;">
+      <div class="text">An Rose edit</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/images/shadowpriesttres.png" style="width:100%;">
+      <div class="text">Shadow Priest Retail Edit</div>
+    </div>
   </div>
-</div>
 
-     <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-xlarge">
-  <p class="w3-medium">
-    Powered by <a class="ex4" href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-    <p class="w3-medium">Hosted by <a class="ex4" href="https://pages.github.com" target="_blank">Github Pages</a></p>
-  </p>
-</footer>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main">
 
-<script>
-  w3CodeColor();
-  </script>
+    <div w3-include-html="gallerycontent.html"></div>
 
-<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
-
-<!-- Go to Top script-->
-<script>
-  // Get the button:
-  let mybutton = document.getElementById("myBtn");
-
-  // When the user scrolls down 2-px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // WHen the user clicks on the button, scroll to the top of document.
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-</script>
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
 
 
-<!-- Slide show settings -->
-<script>    
-    var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 2 seconds
-}
-</script>
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+      <h3>Footer</h3>
+      <p>Powered by <a class="ex4" href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <p>Hosted by <a class="ex4" href="https://pages.github.com" target="_blank">Github Pages</a></p>
+    </footer>
 
+    <!-- Go to Top script-->
+    <script src="/javascript/topbutton.js"></script>
 
-<!-- Get the current date -->
-<script>
-  const d = new Date();
-  document.getElementById("demo").innerHTML = d;
-  </script>
+    <script src="/javascript/slideshow.js"></script>
 
 </body>
+
 </html>
 
